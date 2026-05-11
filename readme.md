@@ -4,15 +4,9 @@ This repository contains the simulation framework and analysis scripts for model
 
 The project simulates how **Prediction Error (PE)** modulates attention to break "blocking" effects in human reasoning. Crucially, it models this process as a **Circuit Breaker** mechanism: PE momentarily disengages the dominant "Identity" policy to allow latent "Diversity" rules to be expressed, even when learning is frozen.
 
-![Task Sequence](assets/task_sequence.png) 
-*Figure 1: The experimental trial sequence generating the exogenous Prediction Error.*
-
 ## 🧠 Core Theoretical Framework
 
 We formalize two competing computational hypotheses to explain the "Unblocking" effect. 
-
-![Functional Mechanism](assets/functional_mechanism.png)
-*Figure 2: The proposed Thalamic Gating mechanism disrupting the filtered state.*
 
 ### Model A: The Signal Enhancement Model (Input Gating)
 * **Hypothesis:** Blocking occurs because the neural signal for "Diversity" features is too noisy or suppressed. PE reduces this noise (Thalamic Disinhibition).
