@@ -68,8 +68,6 @@ In contrast, the **Signal Enhancement** model remains mathematically bottlenecke
 ![Signal Enhancement Timeline](assets/signal_enhancement_timeline.png)
 *Figure 4: Simulated trial-by-trial timeline for the Signal Enhancement architecture. The agent remains blocked.*
 
-## 📂 Repository Status: Preprint
-
 **Notice:** To protect unpublished empirical data and proprietary cognitive architectures prior to peer review, the core execution files (`agent.py`, `metacontroller.py`, `main.py`) and human behavioral datasets are currently withheld. 
 
 This repository currently provides the analysis, plotting, and environmental generation utilities used to evaluate the simulations. The complete source code and datasets will be released upon publication.
