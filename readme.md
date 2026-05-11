@@ -4,6 +4,18 @@ This repository contains the simulation framework and analysis scripts for model
 
 The project simulates how **Prediction Error (PE)** modulates attention to break "blocking" effects in human reasoning. Crucially, it models this process as a **Circuit Breaker** mechanism: PE momentarily disengages the dominant "Identity" policy to allow latent "Diversity" rules to be expressed, even when learning is frozen.
 
+## 📊 Simulation Results
+
+As shown below, the **Policy Switching** model successfully reproduces the transient unblocking effect during Oddball (PE) trials. 
+
+![Policy Switching Timeline](assets/policy_switching_timeline.png)
+*Figure 1: Simulated trial-by-trial timeline for the Policy Switching architecture. The diversity policy successfully intervenes during Test Block 1.*
+
+In contrast, the **Signal Enhancement** model remains mathematically bottlenecked and heavily suppressed by the dominant prior.
+
+![Signal Enhancement Timeline](assets/signal_enhancement_timeline.png)
+*Figure 2: Simulated trial-by-trial timeline for the Signal Enhancement architecture. The agent remains blocked.*
+
 ## 🧠 Core Theoretical Framework
 
 We formalize two competing computational hypotheses to explain the "Unblocking" effect. 
@@ -55,18 +67,6 @@ The simulation runs autonomous "Digital Twins" through a 3-phase environment:
     * **Trials:** 36 (18 Identity / 18 Diversity).
     * **Feedback:** **NO**. (Learning is Frozen).
     * **Mechanism:** Identical to Block 1. Used to observe washout effects.
-
-## 📊 Simulation Results
-
-As shown below, the **Policy Switching** model successfully reproduces the transient unblocking effect during Oddball (PE) trials. 
-
-![Policy Switching Timeline](assets/policy_switching_timeline.png)
-*Figure 3: Simulated trial-by-trial timeline for the Policy Switching architecture. The diversity policy successfully intervenes during Test Block 1.*
-
-In contrast, the **Signal Enhancement** model remains mathematically bottlenecked and heavily suppressed by the dominant prior.
-
-![Signal Enhancement Timeline](assets/signal_enhancement_timeline.png)
-*Figure 4: Simulated trial-by-trial timeline for the Signal Enhancement architecture. The agent remains blocked.*
 
 **Notice:** To protect unpublished empirical data and proprietary cognitive architectures prior to peer review, the core execution files (`agent.py`, `metacontroller.py`, `main.py`) and human behavioral datasets are currently withheld. 
 
