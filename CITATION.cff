@@ -1,0 +1,21 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Prediction Error and Thalamic Gating
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Soan
+    name-particle: Kim
+    email: soan.kim9@gmail.com
+    orcid: 'https://orcid.org/0000-0001-7720-3090'
+repository-code: 'https://github.com/SoanKim/rl-policy-switching'
+keywords:
+  - reinforcement-learning
+  - prediction-error
+  - thalamic-gating
+  - cognitive-flexibility
+license: MIT
